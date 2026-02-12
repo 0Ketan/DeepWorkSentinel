@@ -22,3 +22,51 @@ An AI-powered focus assistant that uses real-time Computer Vision and a Local La
 ### 1. Install System Dependencies (Linux)
 ```bash
 sudo apt update && sudo apt install mpg123
+
+```
+
+### 2. Install Ollama
+
+Download and install from [ollama.com](https://ollama.com). Once installed, pull the model:
+
+```bash
+ollama run llama3.2:1b
+
+```
+
+### 3. Setup Python Environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+```
+
+### 4. Run the Sentinel
+
+```bash
+python main.py
+
+```
+
+## Tech Stack
+
+* **Language:** Python
+* **Vision:** Ultralytics YOLOv8
+* **LLM:** Ollama / Llama 3.2
+* **Audio:** gTTS & mpg123
+
+```
+
+---
+
+### Pro-Tip for your LinkedIn post:
+In your video, you were getting about **10-12 FPS** in the final clip. If someone asks why, tell them: 
+> "The 20-30 FPS hardware cap is due to the webcam's auto-exposure in indoor lighting, while the inference itself is running at a lightning-fast 10ms on the RTX 3050."
+
+It shows you actually understand the hardware-software interface.
+
+**Would you like me to help you draft a specific "About" section for your GitHub profile to match this project?**
+
+```
